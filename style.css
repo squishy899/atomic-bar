@@ -1,0 +1,30 @@
+body {
+    background:#121212;
+    color:#7dff7d;
+    font-family:Consolas;
+}
+
+.container {
+    width:700px;
+    margin:auto;
+    padding:20px;
+}
+
+button {
+    background:#1f1f1f;
+    color:#7dff7d;
+    border:1px solid #7dff7d;
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+}
+
+button:hover {
+    background:#2b2b2b;
+}
+
+.building {
+    margin-top:15px;
+    padding:10px;
+    border:1px solid #444;
+}
