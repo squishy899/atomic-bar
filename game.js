@@ -196,5 +196,7 @@ function randomEvent(){
         );
     }
 }
+
 setInterval(gameLoop,100);
+
 setInterval(randomEvent,60000);
