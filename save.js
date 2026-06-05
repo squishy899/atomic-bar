@@ -38,37 +38,6 @@ function loadGame(){
     scrap += getSPS() * secondsAway;
 }
 
-function randomEvent(){
-
-    let roll = Math.random();
-
-    if(roll < 0.33){
-
-        scrap += 50;
-
-        logEvent(
-            "📦 Supply cache discovered! +50 Scrap"
-        );
-    }
-
-    else if(roll < 0.66){
-
-        food += 25;
-
-        logEvent(
-            "🚚 Survivors shared food. +25 Food"
-        );
-    }
-
-    else{
-
-        scrap = Math.max(0, scrap - 25);
-
-        logEvent(
-            "☠ Raider attack! -25 Scrap"
-        );
-    }
-}
 loadGame();
 
 setInterval(saveGame,5000);
