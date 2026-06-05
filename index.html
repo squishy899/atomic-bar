@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wasteland Command</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>☢ Wasteland Command</h1>
+
+    <div class="resources">
+        <div>Scrap: <span id="scrap">0</span></div>
+        <div>Survivors: <span id="survivors">1</span></div>
+        <div>Scrap/sec: <span id="sps">0</span></div>
+    </div>
+
+    <button onclick="manualScavenge()">
+        Scavenge Ruins
+    </button>
+
+    <h2>Buildings</h2>
+
+    <div class="building">
+        Scrap Heap
+        Cost: <span id="heapCost">10</span>
+        <button onclick="buyHeap()">Buy</button>
+        Owned: <span id="heaps">0</span>
+    </div>
+
+    <div class="building">
+        Scavenger Team
+        Cost: <span id="teamCost">50</span>
+        <button onclick="buyTeam()">Buy</button>
+        Owned: <span id="teams">0</span>
+    </div>
+
+</div>
+
+<script src="game.js"></script>
+<script src="save.js"></script>
+
+</body>
+</html>
