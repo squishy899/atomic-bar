@@ -93,6 +93,7 @@ function getSPS(){
 function gameLoop(){
 
     scrap += getSPS()/10;
+    
 let power = 0;
 let food = 50;
 let technology = 0;
@@ -100,6 +101,7 @@ let technology = 0;
 let generators = 0;
 let gardens = 0;
 let labs = 0;
+
     updateUI();
 }
 
