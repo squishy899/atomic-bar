@@ -125,6 +125,7 @@ function updateUI(){
 
     document.getElementById("teamCost").innerText =
         teamCost;
+        
         document.getElementById("power").innerText =
     Math.floor(power);
 
