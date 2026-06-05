@@ -126,5 +126,16 @@ function updateUI(){
     document.getElementById("teamCost").innerText =
         teamCost;
 }
+function logEvent(text){
 
+    let log =
+        document.getElementById("eventLog");
+
+    let entry =
+        document.createElement("div");
+
+    entry.textContent = text;
+
+    log.prepend(entry);
+}
 setInterval(gameLoop,100);
