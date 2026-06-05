@@ -82,34 +82,31 @@ function buyLab(){
             Math.floor(labCost * 1.25);
     }
 }
-function getSPS(){
 
+function getSPS(){
     return (
         scrapHeaps * 1 +
         scavengerTeams * 5
-    );
 }
+
 function getPPS(){
-    
-    return generators * 2; }
+    return generators * 2; 
     }
     
 function getFPS(){
-        
         return garden * 1.5}
         }
+        
 function getTPS(){
-    
     return labs * .5}
-    
-
+    }
 }
 function gameLoop(){
 
-    scrap += getSPS()/10;
-    power += getPPS()/10;
-    food += getFPS()/10
-    technology += getTPS()/10
+    scrap += getSPS() * 0.1;
+    power += getPPS() * 0.1;
+    food += getFPS() * 0.1;
+    technology += getTPS() * 0.1;
     
     updateUI();
 }
@@ -209,5 +206,4 @@ function randomEvent(){
 }
 
 setInterval(gameLoop,100);
-
 setInterval(randomEvent,60000);
