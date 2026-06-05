@@ -46,7 +46,42 @@ function buyTeam() {
         teamCost = Math.floor(teamCost * 1.20);
     }
 }
+function buyGenerator(){
 
+    if(scrap >= generatorCost){
+
+        scrap -= generatorCost;
+
+        generators++;
+
+        generatorCost =
+            Math.floor(generatorCost * 1.20);
+    }
+}
+function buyGarden(){
+
+    if(scrap >= gardenCost){
+
+        scrap -= gardenCost;
+
+        gardens++;
+
+        gardenCost =
+            Math.floor(gardenCost * 1.15);
+    }
+}
+function buyLab(){
+
+    if(scrap >= labCost){
+
+        scrap -= labCost;
+
+        labs++;
+
+        labCost =
+            Math.floor(labCost * 1.25);
+    }
+}
 function getSPS(){
 
     return (
