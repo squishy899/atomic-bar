@@ -38,18 +38,6 @@ function loadGame(){
     scrap += getSPS() * secondsAway;
 }
 
-function logEvent(text){
-
-    let log =
-        document.getElementById("eventLog");
-
-    let entry =
-        document.createElement("div");
-
-    entry.textContent = text;
-
-    log.prepend(entry);
-}
 function randomEvent(){
 
     let roll = Math.random();
