@@ -7,6 +7,10 @@ let scavengerTeams = 0;
 let heapCost = 10;
 let teamCost = 50;
 
+let power = 0;
+let food = 50;
+let technology = 0;
+
 function manualScavenge() {
     scrap += 1;
 }
