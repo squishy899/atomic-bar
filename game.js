@@ -126,31 +126,31 @@ function updateUI(){
     document.getElementById("teamCost").innerText =
         teamCost;
         
-        document.getElementById("power").innerText =
+    document.getElementById("power").innerText =
     Math.floor(power);
 
-document.getElementById("food").innerText =
+    document.getElementById("food").innerText =
     Math.floor(food);
 
-document.getElementById("technology").innerText =
+    document.getElementById("technology").innerText =
     Math.floor(technology);
 
-document.getElementById("generators").innerText =
+    document.getElementById("generators").innerText =
     generators;
 
-document.getElementById("gardens").innerText =
+    document.getElementById("gardens").innerText =
     gardens;
 
-document.getElementById("labs").innerText =
+    document.getElementById("labs").innerText =
     labs;
 
-document.getElementById("generatorCost").innerText =
+    document.getElementById("generatorCost").innerText =
     generatorCost;
 
-document.getElementById("gardenCost").innerText =
+    document.getElementById("gardenCost").innerText =
     gardenCost;
 
-document.getElementById("labCost").innerText =
+    document.getElementById("labCost").innerText =
     labCost;
 }
 function logEvent(text){
