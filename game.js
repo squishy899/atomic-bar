@@ -89,10 +89,27 @@ function getSPS(){
         scavengerTeams * 5
     );
 }
+function getPPS(){
+    
+    return generators * 2; }
+    }
+    
+function getFPS(){
+        
+        return garden * 1.5}
+        }
+function getTPS(){
+    
+    return labs * .5}
+    
 
+}
 function gameLoop(){
 
     scrap += getSPS()/10;
+    power += getPPS()/10;
+    food += getFPS()/10
+    technology += getTPS()/10
     
     updateUI();
 }
